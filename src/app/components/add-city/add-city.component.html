@@ -1,0 +1,15 @@
+<div class="city-container">
+    <div class="input-container">
+        <label for="city-input">City:</label>
+        <input type="text" id="city-input" [(ngModel)]="cityName" placeholder="Enter city name...">
+        <button (click)="addToList()">Add</button>
+    </div>
+
+    <ul class="city-list">
+        @for (city of cityList; track city) {
+        <li>
+            <a [routerLink]="['/weather', city]"> {{ city }} </a>
+        </li>
+        }
+    </ul>
+</div>

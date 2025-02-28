@@ -1,0 +1,86 @@
+/* Container for input and list */
+.city-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input & Button styles */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+#city-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+#city-input:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.input-container button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+/* City List */
+.city-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.city-list li {
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.city-list li:hover {
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+.city-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.city-list a:hover {
+    color: #0056b3;
+}

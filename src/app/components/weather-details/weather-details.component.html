@@ -1,0 +1,18 @@
+<!-- Display weather data if it exists -->
+@if (weather) {
+    <div class="weather-container">
+      <h2>{{weather.location.name}}'s Weather</h2>
+      <div class="weather-info">
+        <p>🌡️ Temperature: <span>{{weather.current.temp_c}}°C ({{weather.current.temp_f}}°F)</span></p>
+        <p>☁️ Condition: <span>{{weather.current.condition.text}}</span></p>
+        <p>💨 Wind Speed: <span>{{weather.current.wind_mph}} mph</span></p>
+        <p>💧 Humidity: <span>{{weather.current.humidity}}%</span></p>
+        <p>🌞 UV Index: <span>{{weather.current.uv}}</span></p>
+      </div>
+    </div>
+    }
+    
+    <!-- Back Button -->
+    <div class="button-container">
+        <button (click)="backToHome()">⬅️ Back</button>
+    </div>
