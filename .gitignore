@@ -44,3 +44,4 @@ Thumbs.db
 
 # Ignore environment.ts file (contains sensitive data like API keys)
 src/environments/environment.development.ts
+.vercel
